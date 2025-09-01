@@ -7,7 +7,7 @@
     "plugin:tailwindcss/recommended"
   ],
   "plugins": ["tailwindcss"],
-  "rules": {
+  "rules": {  
     "tailwindcss/no-custom-classname": "off",
     "tailwindcss/classnames-order": "off"
   },
