@@ -44,6 +44,7 @@ export const {
         const users = await getUser(email);
 
         if (users.length === 0) {
+          // 即使找不到用户，也不立即返回，而是执行一个假的密码比较，避免用户尝试猜测密码
           await compare(password, DUMMY_PASSWORD);
           return null;
         }
